@@ -1,0 +1,437 @@
+@font-face {
+  font-family: "myriad";
+  src: url("../assets/fonts/MyriadVariableConcept-Roman.otf");
+}
+
+@font-face {
+  font-family: "myriad-pro-regular";
+  src: url("../assets/fonts/MyriadPro-Regular.otf");
+}
+
+* {
+  font-family: "myriad";
+  font-weight: 800;
+}
+
+p,
+ul,
+li,
+#temario {
+  font-family: "myriad-pro-regular";
+}
+
+#temario {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#temario .accordion-button {
+  font-weight: 500;
+}
+
+#temario .accordion-body {
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+/* #41C406 #3A3C42 #9CCD62 #F7F8E2 #DFDECA */
+
+header {
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 1.3s;
+  background-color: transparent;
+  color: #3a3c42;
+  z-index: 10;
+  padding: 30px 15px;
+  opacity: 0;
+  justify-content: space-around;
+}
+
+header.sticky {
+  background: #3a3c42;
+  opacity: 0.9;
+  padding: 5px 10px;
+}
+
+.navbar {
+  width: 100%;
+}
+
+header.sticky a {
+  color: #41c406 !important;
+}
+
+.navbar-brand {
+  position: relative;
+  width: 7rem;
+  height: 5rem;
+}
+
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header a {
+  color: #3a3c42 !important;
+}
+
+main {
+  grid-row: 2 / 3;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  grid-row: 3 / 4;
+}
+
+/* BANNER */
+
+.banner {
+  width: 100%;
+  height: 110vh;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner .title {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  top: 35%;
+  left: 50%;
+  translate: -50% -50%;
+  text-align: center;
+}
+
+.banner .title img {
+  width: 15rem;
+  height: 15rem;
+}
+
+.custom-shape-divider-bottom-1680999624 {
+  position: absolute;
+  bottom: -85px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1680999624 svg {
+  position: relative;
+  display: block;
+  width: calc(154% + 1.3px);
+  height: 93px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1680999624 .shape-fill {
+  fill: #fdfffb;
+}
+
+/********** CURSOS **********/
+
+.course-title {
+  margin-top: 3rem;
+}
+
+.title {
+  /* margin-top: 2rem; */
+  text-align: center;
+}
+
+.title h2 {
+  /* margin: 3rem 0 2rem; */
+  font-size: 3rem;
+  font-weight: 800;
+  position: relative;
+  display: inline-block;
+}
+
+.title h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #41c406;
+}
+
+.accordion {
+  margin: 3rem auto;
+}
+
+.accordion-header {
+  text-align: center;
+}
+
+.accordion-header .accordion-button {
+  /* height: 45vh; */
+  color: black;
+}
+
+.accordion-item {
+  position: relative;
+}
+
+.accordion-collapse {
+  padding: 2rem;
+}
+
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #42c40690;
+}
+
+.accordion-body h2 {
+  color: #41c406;
+  margin: 2rem 0;
+}
+
+#temario-c1 .accordion-body,
+#temario-c2 .accordion-body,
+#temario-c3 .accordion-body {
+  font-weight: 400;
+}
+
+.button-c1 {
+  /* background-image: url("../assets/pexels-pixabay-159243.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  width: 100%;
+  height: 100%; */
+  /* height: 500px; */
+}
+
+/******** FORMULARIO *********/
+.contact {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/form/1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.contact-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 0 0 0;
+  justify-content: center;
+  align-items: top;
+  z-index: 2;
+  margin: 0;
+}
+
+.contact-container .title {
+  color: white;
+}
+
+.form {
+  position: relative;
+  border-radius: 10px;
+  /* padding: 3rem; */
+}
+
+.form-content {
+  position: relative;
+  z-index: 999;
+  /* width: 100%; */
+  height: 100%;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  margin-bottom: 10px;
+  color: white;
+  margin-top: 1rem;
+}
+
+.form-control::placeholder {
+  color: white;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 5px rgb(102 176 255 / 20%);
+  background: transparent;
+  color: white;
+}
+
+.submit {
+  background-color: #9ccd62;
+  border: none;
+}
+
+.form-control:focus {
+  border-color: white;
+}
+
+.form-control::placeholder {
+  color: white;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image {
+  margin-bottom: 3rem;
+}
+
+.custom-shape-divider-top-1680999895 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1680999895 svg {
+  position: relative;
+  display: block;
+  width: calc(154% + 1.3px);
+  height: 93px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1680999895 .shape-fill {
+  fill: #fdfffb;
+}
+
+/****** Whatsapp button *******/
+.whatsapp {
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 0.2rem 0.5rem 0;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 2rem;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  /* color: rgb(107, 170, 44);
+  background-color: white; */
+  background-color: rgb(107, 170, 44);
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.whatsapp:hover {
+  color: rgb(107, 170, 44);
+  background-color: white;
+  border: 1px solid rgb(107, 170, 44);
+}
+
+/********** FOOTER ***********/
+
+footer {
+  padding: 1rem 0;
+  height: 7;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* background-color: transparent; */
+}
+
+footer .content {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+footer a {
+  font-size: 1.2rem;
+  color: #c2c3c9;
+}
+
+footer .instagram:hover {
+  color: #d02c85 !important;
+}
+
+footer .whatsapp:hover {
+  color: #42bc50 !important;
+}
+
+footer .linkedin:hover {
+  color: #0c60b8 !important;
+}
+
+footer .facebook:hover {
+  color: #005095 !important;
+}
+
+footer .youtube:hover {
+  color: #c4302b;
+}
+
+footer ul {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .banner .title {
+    width: 70%;
+    flex-direction: row;
+  }
+
+  .contact-container {
+    padding: 11rem 0 0;
+    flex-direction: row;
+  }
+}
