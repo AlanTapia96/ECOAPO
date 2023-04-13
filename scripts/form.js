@@ -34,9 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let name = document.querySelector("#name").value;
     let mail = document.querySelector("#mail").value;
     let course = document.querySelector("#course").value;
+    let whatsapp = document.querySelector('#whatsapp').value;
     let message = document.querySelector("#message").value;
 
-    alert(course);
+    alert(whatsapp);
 
     // const xhr = new XMLHttpRequest();
     // xhr.open("POST", "./contact.php");

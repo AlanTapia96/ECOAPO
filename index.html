@@ -57,7 +57,7 @@
           <img src="./assets/logo.png" alt="" />
           <h1>
             Es tu tiempo de aprender. <br />
-            Estudiá con nosotros!
+            ¡Estudiá con nosotros!
           </h1>
         </div>
         <div class="custom-shape-divider-bottom-1680999624">
@@ -84,10 +84,10 @@
           </svg>
         </div>
       </div>
-      <div class="container title course-title">
-        <h2>CURSOS</h2>
-      </div>
       <div id="courses">
+        <div class="container title course-title">
+          <h2>CURSOS</h2>
+        </div>
         <div class="accordion accordion-flush container" id="c1Flush">
           <div class="accordion-item">
             <h2 class="accordion-header">
@@ -1454,7 +1454,7 @@
         </div>
       </div>
 
-      <div class="contact" id="contact">
+      <div id="contact">
         <div class="custom-shape-divider-top-1680999895">
           <svg
             data-name="Layer 1"
@@ -1478,9 +1478,9 @@
             ></path>
           </svg>
         </div>
-        <div class="contact-container row">
+        <div class="row w-100 m-0">
           <div class="col-12 col-md-6">
-            <div class="title mb-5 text-center">
+            <div class="title mb-4 text-center">
               <h2 class="mb-3">Contactanos</h2>
               <h5>
                 Envianos tus consultas y nos pondremos en contacto pronto.
@@ -1503,6 +1503,13 @@
                   type="text"
                   class="form-control"
                   placeholder="Mail"
+                  required
+                />
+                <input
+                  id="whatsapp"
+                  type="text"
+                  class="form-control"
+                  placeholder="Whatsapp"
                   required
                 />
                 <select name="curso" id="course" class="form-control">
@@ -1538,10 +1545,10 @@
       </div>
     </main>
     <footer>
-      <div class="row ps-4 pe-4 footer-container">
+      <div class="row footer-container">
         <div class="col-12 col-md-5 text-center">
-          <h3 class="">Nuestras redes</h3>
-          <div class="d-flex flex-column m-auto redes">
+          <h3 class="">Redes sociales</h3>
+          <div class="d-flex flex-column m-auto redes justify-content-center align-items-center">
             <ul class="d-flex list-unstyled justify-content-center flex-column">
               <li>
                 <a
@@ -1549,10 +1556,10 @@
                   href="https://www.instagram.com/ecoapo_solar"
                   target="_blank"
                   ><i class="fab fa-instagram instagram"></i
-                  >/&nbsp;ecoapo_solar</a
+                  >/&nbsp;Ecoapo_solar</a
                 >
               </li>
-              <li class="me-3 ms-3">
+              <li>
                 <a
                   class=""
                   href="https://www.facebook.com/EcoApoTecnologia"
@@ -1561,7 +1568,7 @@
                   >/&nbsp;EcoApoTecnologia</a
                 >
               </li>
-              <li class="me-3">
+              <li>
                 <a
                   class=""
                   href="https://www.youtube.com/channel/UCq7gEXE6LBdkuNQAfY_WaKQ"
@@ -1580,12 +1587,14 @@
               </li>
             </ul>
           </div>
-          <img src="/assets/logo.png" alt="" srcset="" class="img-desktop" />
+          <img src="./assets/logo.png" alt="" srcset="" class="img-desktop" />
         </div>
-        <div class="col-12 col-md-7">
+        <div class="col-12 col-md-7 sucursales">
           <h3 class="text-center">Sucursales</h3>
           <div class="flex-column">
-            <div class="row contact-item center justify-content-center">
+            <div
+              class="row contact-item center justify-content-center align-items-center"
+            >
               <address class="col-5">
                 <h4>Banfield</h4>
                 <p><i class="fa fa-map-marker">&nbsp;</i>Maipú 719</p>
@@ -1600,7 +1609,9 @@
               </div>
             </div>
 
-            <div class="row contact-item center justify-content-center">
+            <div
+              class="row contact-item center justify-content-center align-items-center"
+            >
               <address class="col-5">
                 <h4>Canning</h4>
                 <p>
@@ -1618,7 +1629,9 @@
               </div>
             </div>
 
-            <div class="row contact-item center justify-content-center">
+            <div
+              class="row contact-item center justify-content-center align-items-center"
+            >
               <address class="col-5">
                 <h4>Tigre</h4>
                 <p><i class="fa fa-map-marker">&nbsp;</i>Italia 1400</p>
@@ -1635,9 +1648,12 @@
           </div>
         </div>
         <div class="img-responsive-container">
-          <img src="/assets/logo.png" alt="" srcset="" class="img-responsive" />
+          <img src="./assets/logo.png" alt="" srcset="" class="img-responsive" />
         </div>
       </div>
+      <p class="copyright text-center">
+        Copyright ©️ 2023 IACT | Todos los derechos reservados | Diseño y desarrollo <a href="https://www.instagram.com/somos.dm/?hl=es">DM</a> 
+      </p>
     </footer>
     <a
       href="https://api.whatsapp.com/send?phone=+5491137917559&amp;text=Hola!%20"
