@@ -137,6 +137,22 @@ main {
   fill: #fdfffb;
 }
 
+/*********** VIDEO ***********/
+#video {
+  height: 46vh;
+  width: 98%;
+  position: relative;
+  margin: 0 auto 3rem;
+}
+
+.video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 /********** CURSOS **********/
 
 .course-title {
@@ -523,6 +539,11 @@ footer .img-responsive {
 
   .title h2 {
     font-size: 3rem;
+  }
+
+  #video {
+    height: 70vh;
+    width: 50%;
   }
 
   .footer-container {
