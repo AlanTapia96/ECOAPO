@@ -20,19 +20,6 @@ li,
   font-family: "myriad-pro-regular";
 }
 
-#temario {
-  width: 90%;
-  margin: 0 auto;
-}
-
-#temario .accordion-button {
-  font-weight: 500;
-}
-
-#temario .accordion-body {
-  font-weight: 400;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -215,10 +202,31 @@ main {
   font-weight: 400;
 }
 
+#temario-c1 .accordion-button,
+#temario-c2 .accordion-button,
+#temario-c3 .accordion-button,
+.accordion-item {
+  background-color: #f3f8f4;
+}
+
 #temario-c1 .accordion-collapse,
 #temario-c2 .accordion-collapse,
 #temario-c3 .accordion-collapse {
   padding: 0;
+}
+
+#temario {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#temario .accordion-button {
+  font-weight: 500;
+}
+
+#temario .accordion-body {
+  font-weight: 400;
+  background-color: white;
 }
 
 /******** FORMULARIO *********/
