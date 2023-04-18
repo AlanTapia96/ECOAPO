@@ -68,7 +68,7 @@ header.sticky {
   width: 100%;
 }
 
-.navbar-collapse{
+.navbar-collapse {
   text-align: center;
 }
 
@@ -124,9 +124,8 @@ main {
 }
 
 .banner .title img {
-  
   width: 13rem;
-    height: 10rem;
+  height: 10rem;
 }
 
 .custom-shape-divider-bottom-1680999624 {
@@ -153,18 +152,16 @@ main {
 
 /********** CURSOS **********/
 
-
 .course-title {
   margin-top: 3rem;
 }
 
 .title {
-  /* margin-top: 2rem; */
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .title h2 {
-  /* margin: 3rem 0 2rem; */
   font-size: 2rem;
   font-weight: 800;
   position: relative;
@@ -181,21 +178,17 @@ main {
   background-color: #41c406;
 }
 
-.accordion {
-  margin: 3rem auto;
-}
-
 .accordion-header {
   text-align: center;
 }
 
 .accordion-header .accordion-button {
-  /* height: 45vh; */
   color: black;
 }
 
 .accordion-item {
   position: relative;
+  margin-bottom: 0.5rem;
 }
 
 .accordion-collapse {
@@ -230,8 +223,8 @@ main {
 
 /******** FORMULARIO *********/
 
-.custom-shape-divider-top-1680999895{
-  top: -1px !important
+.custom-shape-divider-top-1680999895 {
+  top: -1px !important;
 }
 
 #contact {
@@ -256,8 +249,8 @@ main {
   opacity: 0.5;
 }
 
-#contact h5{
-  position: relative
+#contact h5 {
+  position: relative;
 }
 
 .form {
@@ -290,7 +283,7 @@ main {
   color: white;
 }
 
-.form textarea{
+.form textarea {
   background-color: #ffffff38;
 }
 
@@ -436,16 +429,16 @@ footer ul {
   margin-bottom: 0;
 }
 
-footer li{
+footer li {
   display: flex;
   /* margin-left: 10%; */
 }
 
-footer li i{
+footer li i {
   width: 1.5rem;
 }
 
-footer li a{
+footer li a {
   font-size: 1rem;
 }
 
@@ -465,10 +458,10 @@ footer li a{
 
 .gmap {
   width: 50%;
-  height: 8rem;
+  height: 9rem;
 }
 
-.embed-responsive-item {
+iframe {
   width: 100%;
   height: 100%;
 }
@@ -499,20 +492,20 @@ footer .img-responsive {
   padding: 0 2rem;
 }
 
-.copyright a{
+.copyright a {
   display: inline-block;
   padding-top: 2px;
-  transition-duration: .1s;
+  transition-duration: 0.1s;
 }
 
-.copyright a:hover{
-  color:black
+.copyright a:hover {
+  color: black;
 }
 
 @media (min-width: 768px) {
   .banner .title img {
     width: 15rem;
-  height: 15rem;
+    height: 15rem;
   }
 
   .banner .title {

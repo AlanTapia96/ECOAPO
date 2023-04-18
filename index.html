@@ -20,6 +20,15 @@
       src="https://kit.fontawesome.com/2e628165bc.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
@@ -88,7 +97,7 @@
         <div class="container title course-title">
           <h2>CURSOS</h2>
         </div>
-        <div class="accordion accordion-flush container" id="c1Flush">
+        <div class="accordion open accordion-flush container" id="c1Flush">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button
@@ -96,7 +105,6 @@
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapse-c1"
-                aria-expanded="false"
                 aria-controls="flush-collapse-c1"
               >
                 INTRODUCCIÓN A LA ENERGÍA SOLAR TÉRMICA
@@ -105,7 +113,7 @@
             <div
               id="flush-collapse-c1"
               class="accordion-collapse collapse"
-              data-bs-parent="#c1Flush"
+              data-bs-toggle="collapse"
             >
               <div class="accordion-body">
                 <p>
@@ -117,7 +125,7 @@
                   dimensionar un sistema completo para el hogar y costearlo
                   económicamente.
                 </p>
-                <h2>INFORMACIÓN DEL CURSO</h2>
+                <h2 class="text-center">INFORMACIÓN DEL CURSO</h2>
                 <p>
                   El objetivo del curso es formar a los participantes en los
                   conocimientos básicos de todas las tecnologías que existen hoy
@@ -479,11 +487,7 @@
                 SISTEMAS AUTÓNOMOS Y CONECTADOS A RED
               </button>
             </h2>
-            <div
-              id="flush-collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#c1Flush"
-            >
+            <div id="flush-collapseTwo" class="accordion-collapse collapse">
               <div class="accordion-body">
                 <p>
                   El Curso de Energía Solar Fotovoltaica - Sistemas autónomos y
@@ -496,7 +500,7 @@
                   mismos, ya sea para uso particular o como una herramienta
                   profesional.
                 </p>
-                <h2>INFORMACIÓN DEL CURSO</h2>
+                <h2 class="text-center">INFORMACIÓN DEL CURSO</h2>
                 <p>
                   El curso abarca de forma técnica e intensiva los sistemas
                   solares fotovoltaicos aislados de la red eléctrica (autónomos)
@@ -1085,11 +1089,7 @@
                 NUEVAS TECNOLOGÍAS DE CONSTRUCCIÓN SUSTENTABLE
               </button>
             </h2>
-            <div
-              id="flush-collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#c1Flush"
-            >
+            <div id="flush-collapseThree" class="accordion-collapse collapse">
               <div class="accordion-body">
                 <p>
                   El Curso de Arquitectura Sustentable está diseñado para
@@ -1099,7 +1099,7 @@
                   comprender sus ventajas, desafíos, formas de implementación y
                   costos comparativos con la arquitectura tradicional.
                 </p>
-                <h2>INFORMACIÓN DEL CURSO</h2>
+                <h2 class="text-center">INFORMACIÓN DEL CURSO</h2>
                 <p>
                   El curso abarca todas las iniciativas de la Arquitectura
                   Sustentable que pueden aplicarse actualmente en proyectos de
@@ -1548,7 +1548,9 @@
       <div class="row footer-container">
         <div class="col-12 col-md-5 text-center">
           <h3 class="">Redes sociales</h3>
-          <div class="d-flex flex-column m-auto redes justify-content-center align-items-center">
+          <div
+            class="d-flex flex-column m-auto redes justify-content-center align-items-center"
+          >
             <ul class="d-flex list-unstyled justify-content-center flex-column">
               <li>
                 <a
@@ -1603,8 +1605,13 @@
               </address>
               <div class="embed-responsive gmap col-5">
                 <iframe
-                  class="embed-responsive-item"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.4465404647485!2d-58.387771784233294!3d-34.744342672460476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2a5b60de631%3A0x97a9b708360e655f!2sMaip%C3%BA%20719%2C%20B1828IJO%20Banfield%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1659995050323!5m2!1ses!2sar"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.446365827233!2d-58.38815802548881!3d-34.74434707290414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2a5b60de631%3A0x97a9b708360e655f!2sMaip%C3%BA%20719%2C%20B1828IJO%20Banfield%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1681825936736!5m2!1ses!2sar"
+                  width="400"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
             </div>
@@ -1613,46 +1620,56 @@
               class="row contact-item center justify-content-center align-items-center"
             >
               <address class="col-5">
-                <h4>Canning</h4>
-                <p>
-                  <i class="fa fa-map-marker">&nbsp;</i>Ruta 58 K14 Office
-                  Center Tiempos
-                </p>
-                <p>11-6138-1530</p>
-                <p>11-5012-5224</p>
-              </address>
-              <div class="embed-responsive gmap col-5">
-                <iframe
-                  class="embed-responsive-item"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209565.6372441217!2d-58.64614954676919!3d-34.84458982082398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd296f0c59cf71%3A0x19bb415a7f702a23!2sRP58%2C%20Canning%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1659995132398!5m2!1ses!2sar"
-                ></iframe>
-              </div>
-            </div>
-
-            <div
-              class="row contact-item center justify-content-center align-items-center"
-            >
-              <address class="col-5">
-                <h4>Tigre</h4>
-                <p><i class="fa fa-map-marker">&nbsp;</i>Italia 1400</p>
+                <p><i class="fa fa-map-marker">&nbsp;</i>Rosetti 282</p>
                 <p>11-3791-7559</p>
-                <p>11-2744-4211</p>
               </address>
               <div class="embed-responsive gmap col-5">
                 <iframe
-                  class="embed-responsive-item"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.1214605380865!2d-58.57906724897818!3d-34.42366978041086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca597f8d30fc1%3A0x1c462afc100354c6!2sAv.%20Italia%201400%2C%20B1648EFA%20Tigre%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1586191160079!5m2!1ses!2sar"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.9341744420467!2d-58.42041632548956!3d-34.73205357290847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd9e042e5b5b%3A0x768b51b543778586!2sRosetti%20282%2C%20B1821%20Villa%20Centenario%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1681825914453!5m2!1ses!2sar"
+                  width="400"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <div
+              class="row contact-item center justify-content-center align-items-center mt-3"
+            >
+              <address class="col-5">
+                <h4 class="ms-1">CABA</h4>
+                <p><i class="fa fa-map-marker">&nbsp;</i>Azcuenaga 714</p>
+                <p>11-3791-7559</p>
+              </address>
+              <div class="embed-responsive gmap col-5">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.132103971507!2d-58.40397072549721!3d-34.600820872955246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca937465987d%3A0x3022cb05d7cbb55d!2sAzcu%C3%A9naga%20714%2C%20C1029%20CABA!5e0!3m2!1ses!2sar!4v1681825833525!5m2!1ses!2sar"
+                  width="400"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
             </div>
           </div>
         </div>
         <div class="img-responsive-container">
-          <img src="./assets/logo.png" alt="" srcset="" class="img-responsive" />
+          <img
+            src="./assets/logo.png"
+            alt=""
+            srcset=""
+            class="img-responsive"
+          />
         </div>
       </div>
       <p class="copyright text-center">
-        Copyright ©️ 2023 IACT | Todos los derechos reservados | Diseño y desarrollo <a href="https://www.instagram.com/somos.dm/?hl=es">DM</a> 
+        Copyright ©️ 2023 IACT | Todos los derechos reservados | Diseño y
+        desarrollo <a href="https://www.instagram.com/somos.dm/?hl=es">DM</a>
       </p>
     </footer>
     <a

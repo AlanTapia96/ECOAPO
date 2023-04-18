@@ -1,8 +1,10 @@
 <?php
 	$nombre = $_POST['name'];
 	$mail = $_POST['mail'];
+    $course = $_POST['course'];
+    $whatsapp = $_POST['whatsapp'];
 	$asunto = 'Formulario Web - ecoapo.com.ar';
-	$mensaje = "Nombre: ".$nombre."\nMail: $mail\nMensaje:".$_POST['message'];
+	$mensaje = "Nombre: ".$nombre."\nMail: ".$mail."\nCurso: ".$course."\nWhatsapp: ".$whatsapp."\nMensaje: ".$_POST['message'];
     $to = "info@ecoapo.com.ar";
 
     $cabeceras = 'From: FormularioWeb@ecoapo.com.ar' . "\r\n" .
